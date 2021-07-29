@@ -15,6 +15,10 @@ body {
   font-family: "Spartan", sans-serif;
   font-size: 32px;
   background-color: hsl(222, 26%, 31%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
@@ -22,6 +26,8 @@ body {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 500px;
+  min-width: 300px;
 }
 
 /* small */
