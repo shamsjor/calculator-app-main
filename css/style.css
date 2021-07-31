@@ -121,6 +121,11 @@ header .container .themes::before {
   text-align: end;
   padding-top: 40px;
 }
+@media (max-width: 767px){
+  .screen .container{
+    width: 440px;
+  }
+}
 .keypad .container {
   background-color: var(--theme1-keypad-background);
   margin-top: 20px;
