@@ -123,7 +123,7 @@ header .container .themes::before {
 }
 @media (max-width: 767px){
   .screen .container{
-    width: 440px;
+    width: 340px;
   }
 }
 .keypad .container {
@@ -135,6 +135,11 @@ header .container .themes::before {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   padding: 20px;
+}
+@media (max-width: 767px){
+  .keypad .container{
+    width: 340px;
+  }
 }
 .keypad .container .keys {
   display: grid;
