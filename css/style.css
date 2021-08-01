@@ -16,9 +16,9 @@ body {
   font-size: 32px;
   background-color: hsl(222, 26%, 31%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
 .container {
@@ -26,8 +26,8 @@ body {
   padding-right: 30px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 500px;
   min-width: 300px;
+  max-width: 500px;
 }
 
 /* small */
@@ -51,14 +51,31 @@ body {
   }
 }
 header .container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 40px;
   color: white;
+  position: relative;
   font-size: 22px;
+  margin-bottom: 80px;
+}
+@media (max-width: 767px){
+  header .container{
+    margin-left: -55px
+  }
 }
 header .container .themes {
   text-transform: uppercase;
+    position: absolute;
+    display: inline-block;
+    left: calc(100% - 170px);
+}
+@media (max-width: 767px){
+  header .container .themes{
+    left: calc(100% - 120px);
+  }
+}
+header .container .icon{
+  position: absolute;
+  right: calc(100% - 50px);
 }
 header .container .themes span.space {
   background-color: var(--theme1-keypad-background);
@@ -126,6 +143,7 @@ header .container .themes::before {
     width: 340px;
   }
 }
+
 .keypad .container {
   background-color: var(--theme1-keypad-background);
   margin-top: 20px;
